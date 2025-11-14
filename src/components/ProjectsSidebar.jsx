@@ -24,11 +24,12 @@ export default function ProjectsSidebar({
           } else {
             cssClasses += " text-stone-400";
           }
+
           return (
             <li key={project.id}>
               <button
-                onClick={() => onSelectProject(project.id)}
                 className={cssClasses}
+                onClick={() => onSelectProject(project.id)}
               >
                 {project.title}
               </button>
